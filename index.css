@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
+:root {
+  --primary-color: rgb(149, 120, 164);
+  --light-text-color: rgb(238, 207, 255);
+  --dark-text-color: rgb(101, 31, 138);
+}
+
+* {
+  margin: 0;
+}
+
+.header {
+  z-index: 10;
+  height: 14vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 1px #9578A4;
+}
+
+.menu {
+  color: var(--light-text-color);
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2rem;
+}
+
+.menu-item {
+  color: var(--light-text-color);
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  height: 200px;
+  transition: all 200ms;
+  border-radius: 5px;
+}
+
+.menu-item:hover {
+  background-color:#9b8080;
+}
+
+.banner {
+  background-color: var(--light-text-color);
+  height: 100vh;
+  align-items: center;
+}
+
+.banner-image > iframe {
+  width:100vw;
+  height:100vh;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.contact-header {
+  display: flex;
+}
+
+.contact-header-info {
+  padding: 2rem 4rem;
+}
+
+.contact-header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+} 
+
+.contact-header-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem; 
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 40vh;
+}
+
+.contact-form-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 4rem; 
+}
+
+.contact-form-input {
+  width: 300px;
+  height: 3.5vh;
+  margin: .5rem 0;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--dark-text-color);
+  border-radius: 5px;
+}
+
+.contact-form-input::placeholder {
+  font-family: 'Londrina Solid', cursive;
+  color: var(--dark-text-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.contact-image {
+  align-self: center;
+}
+
+.footer {
+  color: var(--light-text-color);
+  font-family: 'Londrina Solid', cursive;
+  background-color: var(--primary-color);
+  height: 14vh;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-button {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2rem; 
+  color: var(--light-text-color);
+  background-color: var(--primary-color);
+  margin: 0;
+  border-radius: 4px;
+  border: none;
+  padding: 0 2.5rem;
+  min-height: 50px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  filter: brightness(0.95);
+}
